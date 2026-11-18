@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+button, input, textarea { font: inherit; }
+.page { width: min(1000px, 92%); margin: auto; padding: 48px 0 80px; }
+header { margin-bottom: 30px; }
+.eyebrow { color: #5b67d8; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+h1 { margin: 8px 0; font-size: 42px; }
+.subtitle { color: #667085; font-size: 18px; }
+.card, .status-card, .notice {
+  background: white; border: 1px solid #e4e7ec; border-radius: 16px;
+  padding: 24px; margin-bottom: 20px; box-shadow: 0 8px 25px rgba(16,24,40,.05);
+}
+input[type="file"] { display: block; margin: 16px 0; }
+input:not([type="checkbox"]), textarea {
+  width: 100%; border: 1px solid #d0d5dd; border-radius: 10px;
+  padding: 12px; margin: 7px 0 15px; background: #fff;
+}
+textarea { min-height: 90px; resize: vertical; }
+button {
+  border: 0; border-radius: 10px; padding: 11px 18px; cursor: pointer;
+  background: #172033; color: white; font-weight: 700; margin-right: 8px;
+}
+button:disabled { opacity: .45; cursor: not-allowed; }
+button.primary { background: #4f46e5; }
+.success { color: #067647; }
+.error { color: #b42318; }
+.notice { padding: 14px 18px; }
+.status-card { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+.question-header { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 18px; }
+.number { font-size: 20px; font-weight: 800; }
+.type { margin-left: 10px; color: #667085; }
+.badge { padding: 6px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.badge.good { background: #ecfdf3; color: #067647; }
+.badge.bad { background: #fef3f2; color: #b42318; }
+.warning-box { border: 1px solid #fecdca; background: #fffbfa; padding: 14px; border-radius: 10px; margin-bottom: 18px; }
+.evidence { background: #f8f9fc; border-left: 4px solid #667085; padding: 12px 14px; margin: 10px 0 18px; }
+.evidence p { margin-bottom: 0; color: #475467; }
+.checkbox { display: flex; align-items: center; gap: 8px; margin: 15px 0; }
+.checkbox input { width: auto; }
+.hint { color: #667085; }
+.warning { color: #b54708; }
+.actions { position: sticky; bottom: 15px; }
+@media (max-width: 700px) {
+  h1 { font-size: 32px; }
+  .page { padding-top: 25px; }
+  .status-card { display: block; }
+  .status-card div { margin-bottom: 8px; }
+}
